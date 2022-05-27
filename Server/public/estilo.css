@@ -1,0 +1,180 @@
+body{
+  background:rgb(18, 176, 145);
+  text-align: center;
+}
+
+.gg{
+  background-color: rgb(126, 73, 175); 
+  color: #ffffff; 
+  border-radius: 4px; 
+  font-size: 20px; 
+  padding: 20px; 
+  margin: 5px;
+  position: relative;
+}
+
+.cambios{
+  font-size: 3rem;
+}
+
+.hand{
+  height:170px;
+  position:relative;
+  top: 50%; left: -40%;
+  margin:60px auto;
+  display:block;
+  margin-left:10%;
+  transform: rotate(180deg);
+}
+
+.finger{
+  width:40px;
+  height:110px;
+  background:#000;
+  float:left;
+  margin-right:3px;
+  border-radius:10px 10px 15px 15px;
+  position:absolute;
+}
+
+.finger:after{
+  content: "";
+  width:30px;
+  height:30px;
+  background:rgb(18, 176, 145);
+  bottom:10px;
+  left:5px;
+  position:absolute;
+  border-radius:30px 30px 20px 20px;
+}
+
+.finger:before{
+  content: "";
+  width:20px;
+  height:5px;
+  background:rgb(18, 176, 145);
+  bottom:50px;
+  left:10px;
+  position:absolute;
+}
+
+.hand .finger:nth-child(1){
+      width: 40px;
+    height: 130px;
+  bottom:1;
+  left:0;
+  /*animation: shake 0.7s ease infinite ;
+  animation-delay: 0.0s;*/
+}
+.hand .finger:nth-child(2){
+  width:40px;
+  height:165px;
+  bottom:1;
+  left:45px;
+  /*animation: shake 0.7s ease infinite ;
+  animation-delay: 0.1s;*/
+}
+
+.hand .finger:nth-child(3){
+  width:40px;
+  height:180px;
+  bottom:-10px;
+  left:90px;
+  /*animation: shake 0.7s ease infinite;
+  animation-delay: 0.2s;*/
+}
+
+.hand .finger:nth-child(4){
+  width:40px;
+  height:165px;
+  bottom:5px;
+  left:135px;
+  /*animation: shake 0.7s ease infinite ;
+  animation-delay: 0.3s;*/
+}
+
+
+.thumb{
+  position:relative;
+  background:#000;
+  width:45px;
+  height:120px;
+  float:left;
+  left:180px;
+  bottom:130px;
+   margin-top:50px;
+  border-radius: 10px 10px 10px 60px;
+}
+
+
+.ani{
+  animation: shake 0.7s ease infinite;
+  animation-delay: 0.4s;
+}
+
+#rcorners1 {
+  border-radius: 10px 60px 10px 10px;
+  background: #000;
+  padding: 20px;
+  width: 137px;
+  height: 150px;
+  position: relative;
+  bottom: 115%;
+
+  right:2px;
+}
+
+#rcorners2 {
+  border-radius: 10px 60px 10px 10px;
+  background: #000;
+  padding: 10px;
+  width: 25px;
+  height: 120px;
+  position: relative;
+  bottom: 207%;
+  left:180px;
+}
+
+#nail{
+  border-radius: 10px 10px 10px 60px;
+  background: rgb(18, 176, 145);
+  padding: 5px;
+  width: 3px;
+  height: 25px;
+  position: relative;
+  bottom: 212%;
+
+  left:210px;
+}
+
+#nail2{
+  background: rgb(18, 176, 145);
+  width: 15px;
+  height: 5px;
+  position: relative;
+  bottom: 270%;
+
+  left:212px;
+}
+
+
+
+@keyframes shake {
+  100% {
+  background:#00ffff;
+  }
+
+}
+
+p{
+  text-align:Center;
+}
+
+a{
+  color:#fff;
+}
+@media (max-width: 600px) {
+  .hand{
+    left: -25%;
+  }
+}
